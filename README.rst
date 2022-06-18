@@ -36,6 +36,7 @@ To learn more about and customize how the various features of this template work
 
 * `Migrating Your Racket Project from Travis to GitHub Actions <https://countvajhula.com/2021/05/22/migrating-your-racket-project-from-travis-to-github-actions/>`_ -- for information about setting up automated testing, GitHub Actions, Coverage reporting (**NOTE** you will need to follow the instructions in this post to set up the coverage reporting included in this template)
 * `How to Organize Your Racket Library <https://countvajhula.com/2022/02/22/how-to-organize-your-racket-library/>`_ -- this describes the rationale for the lib/test/doc organization scheme employed by the present template, and also contains `step-by-step instructions <https://countvajhula.com/2022/02/22/how-to-organize-your-racket-library/#ib-toc-anchor-12>`_ that you can follow for your project using this template.
+* `Racket Makefiles <https://www.greghendershott.com/2017/04/racket-makefiles.html>`_ -- which provides some background on managing your project using a Makefile
 
 Finally, if there are any features in the template that you aren't planning to use (e.g. profiling) -- *remove them*. The template includes features that reflect best practices applicable to many projects, but if they are not applicable to yours, they would just be cruft in your repo that will cause confusion to you and to potential contributors if left there.
 
