@@ -17,10 +17,10 @@ The first thing you should do (i.e. right now :)) is open a terminal at the dire
 
 This is a template for a Racket library using the lib/test/doc organization scheme (more on this soon), and includes:
 
-* CI config using GitHub Actions
-* Running automated tests
+* CI config using GitHub Actions via `setup-racket <https://github.com/Bogdanp/setup-racket>`_
+* Running automated tests on CI as well as locally
 * Coverage reporting using `Coveralls <https://coveralls.io/>`_
-* A Makefile for managing your project workflows using simple command line aliases
+* A Makefile for managing your project workflows (e.g. compiling, running tests, building and viewing docs) using simple command line aliases
 * A pull request template containing placeholder text that contributors will see when making pull requests against your repo
 * Contributor docs that document some of the above workflows
 * Basic performance profiling for your project
