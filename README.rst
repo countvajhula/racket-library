@@ -13,8 +13,6 @@
 About This Template
 ===================
 
-The first thing you should do (i.e. right now :)) is open a terminal at the directory containing this file, and run ``render-template.sh``. This will resolve all variables in this template to the values they will need to contain for your project. Then, continue reading here:
-
 This is a template for a Racket library using the lib/test/doc organization scheme (more on this soon), and includes:
 
 * CI config using GitHub Actions via `setup-racket <https://github.com/Bogdanp/setup-racket>`_
@@ -29,8 +27,28 @@ You still need to set some of these things up, but don't sweat, the whole proces
 
 In addition to the options here there are many other features you might need in your project -- for instance, running tests for individual modules instead of everything, continuous performance benchmarking via CI, and lots more that you might need depending on the nature of your project -- the template could be extended to support these, but they are not included out of the box. If you need something that isn't here, please submit an issue or PR.
 
+Installation
+============
+
+This template is meant to be installed via `Racket Templates <https://github.com/racket-templates/racket-templates>`_. That is:
+
+::
+
+   raco pkg install from-template
+   raco new library
+
+Once you've done that, you're ready to begin setting up your project. The rest of these instructions will walk you through it.
+
 Setup
------
+=====
+
+Rendering the Template for your Project
+---------------------------------------
+
+The first thing you should do (i.e. right now 😄) is open a terminal at the directory containing this file, and run ``render-template.sh``. This will resolve all variables in this template to the values they will need to contain for your project. Then, continue reading here (after reopening this file to get the rendered version):
+
+Making it Yours
+---------------
 
 To learn more about and customize how the various features of this template work, read:
 
@@ -40,7 +58,7 @@ To learn more about and customize how the various features of this template work
 
 Finally, if there are any features in the template that you aren't planning to use (e.g. profiling) -- *remove them*. The template includes features that reflect best practices applicable to many projects, but if they are not applicable to yours, they would just be cruft in your repo that will cause confusion to you and to potential contributors if left there.
 
-Once you're done with setup, remove this section from the README. General signposting about your project follows.
+Once you're done with setup, remove all of the above sections (except the badges at the top) from the README. General signposting about your project follows.
 
 <project>
 ===================
@@ -55,4 +73,3 @@ Read `the documentation <https://docs.racket-lang.org/<project>/index.html>`_ to
 This work is "part of the world." You are free to do whatever you like with it and it isn't owned by anybody, not even the creators. Attribution would be appreciated and would help, but it is not strictly necessary nor required. If you'd like to learn more about this way of doing things and how it could lead to a peaceful, efficient, and creative world (and how you can be involved), visit `drym.org <https://drym.org>`_.
 
 (If you'd prefer to opt into copyright and use a license, then replace the COPYING file with a LICENSE file containing your preferred license, update the pull request template in pull_request_template.md (but read it first, at least, so you can make an informed choice), and remove the above dedication.)
-
