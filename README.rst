@@ -22,6 +22,7 @@ This is a template for a Racket library using the lib/test/doc organization sche
 * A pull request template containing placeholder text that contributors will see when making pull requests against your repo
 * Contributor docs that document some of the above workflows
 * Basic performance profiling for your project
+* Building and hosting backup documentation for your project using GitHub Pages
 
 You still need to set some of these things up, but don't sweat, the whole process is well-documented and it shouldn't take you long. By the way, in case you were wondering, some of the badges above won't render correctly until you finish setting things up.
 
@@ -52,7 +53,7 @@ Making it Yours
 
 To learn more about and customize how the various features of this template work, read:
 
-* `Migrating Your Racket Project from Travis to GitHub Actions <https://countvajhula.com/2021/05/22/migrating-your-racket-project-from-travis-to-github-actions/>`_ -- for information about setting up automated testing, GitHub Actions, Coverage reporting (**NOTE** you will need to follow the instructions in this post to set up the coverage reporting included in this template)
+* `Migrating Your Racket Project from Travis to GitHub Actions <https://countvajhula.com/2021/05/22/migrating-your-racket-project-from-travis-to-github-actions/>`_ -- for information about setting up automated testing, GitHub Actions, Coverage reporting, hosting backup documentation (**NOTE** you will need to follow the instructions in this post to set up the coverage reporting (among other things) included in this template)
 * `How to Organize Your Racket Library <https://countvajhula.com/2022/02/22/how-to-organize-your-racket-library/>`_ -- this describes the rationale for the lib/test/doc organization scheme employed by the present template, and also contains `step-by-step instructions <https://countvajhula.com/2022/02/22/how-to-organize-your-racket-library/#ib-toc-anchor-12>`_ that you can follow for your project using this template.
 * `Racket Makefiles <https://www.greghendershott.com/2017/04/racket-makefiles.html>`_ -- which provides some background on managing your project using a Makefile
 

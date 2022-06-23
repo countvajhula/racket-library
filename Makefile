@@ -8,6 +8,7 @@ DEPS-FLAGS=--check-pkg-deps --unused-pkg-deps
 help:
 	@echo "build - Compile package"
 	@echo "build-docs - Build docs"
+	@echo "build-standalone-docs - Build self-contained docs that could be hosted somewhere"
 	@echo "check-deps - Check dependencies"
 	@echo "build-all - Compile package, build docs, and check dependencies"
 	@echo "clean - Remove all build artifacts"
@@ -46,6 +47,11 @@ build-docs:
 # Build libraries from source, build docs (if any), and check dependencies.
 build-all:
 	raco setup --tidy $(DEPS-FLAGS) --pkgs $(PACKAGE-NAME)-{lib,test,doc} $(PACKAGE-NAME)
+
+# Primarily for CI, for building backup docs that could be used in case
+# the main docs at docs.racket-lang.org become unavailable.
+build-standalone-docs:
+	scribble +m --redirect-main http://pkg-build.racket-lang.org/doc/ --htmls --dest ./docs ./$(PACKAGE-NAME)-doc/scribblings/$(PACKAGE-NAME).scrbl
 
 # Primarily for use by CI, after make install -- since that already
 # does the equivalent of make build, this tries to do as little as
